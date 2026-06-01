@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travelog — Privacy Policy</title>
+<style>
+  :root {
+    --ink: #1c2230;
+    --muted: #5e6470;
+    --link: #1f6feb;
+    --rule: #e6e8ee;
+    --bg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #ecedf0; --muted: #9aa0aa; --link: #6aa8ff; --rule: #2a2f3a; --bg: #14171c; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 36px 24px 80px;
+    -webkit-text-size-adjust: 100%;
+  }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; padding-top: 14px; border-top: 1px solid var(--rule); }
+  h3 { font-size: 16px; margin: 18px 0 6px; }
+  p, li { font-size: 15px; }
+  .meta { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  code { background: rgba(127,127,127,0.12); padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+  .toc { font-size: 14px; padding: 12px 16px; background: rgba(127,127,127,0.06); border-radius: 8px; margin: 14px 0 24px; }
+  .toc strong { display: block; margin-bottom: 6px; }
+  .toc ol { margin: 0; padding-left: 20px; }
+  .footer { color: var(--muted); font-size: 12px; margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--rule); }
+</style>
+</head>
+<body>
+
+<h1>Travelog — Privacy Policy</h1>
+<p class="meta">Effective date: <strong>1 June 2026</strong></p>
+
+<div class="toc">
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#who">Who we are</a></li>
+    <li><a href="#what">What we collect</a></li>
+    <li><a href="#how">How we use it</a></li>
+    <li><a href="#sharing">Third parties</a></li>
+    <li><a href="#legal">Legal bases (GDPR)</a></li>
+    <li><a href="#retention">Retention</a></li>
+    <li><a href="#rights">Your rights</a></li>
+    <li><a href="#security">Security</a></li>
+    <li><a href="#children">Children</a></li>
+    <li><a href="#changes">Changes</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</div>
+
+<h2 id="who">1. Who we are</h2>
+<p>Travelog ("we," "us," "our") is a personal travel tracking app published by Berna Ozer. This Privacy Policy explains what data the Travelog iOS app collects, how we use it, who we share it with, and the choices you have. It applies to the Travelog mobile application and related services (the "Service").</p>
+
+<h2 id="what">2. What we collect</h2>
+
+<h3>2.1 Account data (only if you sign in)</h3>
+<p>Travelog can be used without an account. If you choose to sign in (so that your travels sync across devices and friends can find you), we collect:</p>
+<ul>
+  <li>Email address (via Sign in with Apple or Google Sign-In)</li>
+  <li>Display name and username</li>
+  <li>Profile photo (optional, if you upload one)</li>
+  <li>Home country (auto-detected from device locale; you can change it)</li>
+</ul>
+
+<h3>2.2 Travel content you create</h3>
+<ul>
+  <li><strong>Check-ins</strong>: country code, optional city name, latitude/longitude, timestamp, and a verification flag</li>
+  <li><strong>Photos you import</strong>: we read the GPS metadata (EXIF) embedded in the photos you choose, to detect the country/city of the photo. Photo files themselves are NOT uploaded to our servers — only the resolved country/city + date are stored.</li>
+  <li><strong>Achievements, streaks, score</strong>: derived from your check-ins</li>
+  <li><strong>Travel "DNA" archetype</strong>: derived from your check-in mix (coastal / mountain / urban / etc.)</li>
+</ul>
+
+<h3>2.3 Friends and social</h3>
+<ul>
+  <li>The list of users you choose to follow ("following")</li>
+  <li>Friend requests you send or receive</li>
+  <li>Aggregated comparison data shown when you use Compare with Friends</li>
+</ul>
+
+<h3>2.4 Purchase data</h3>
+<p>If you subscribe to Travelog Premium or buy the lifetime tier, Apple's StoreKit handles payment. We do <em>not</em> see your credit card details. We receive only:</p>
+<ul>
+  <li>The product identifier (monthly / yearly / lifetime)</li>
+  <li>The transaction status and expiry date, server-verified via Apple's App Store Server API</li>
+  <li>Whether you are in a free trial</li>
+</ul>
+
+<h3>2.5 Notifications</h3>
+<p>If you grant push permission, your device's FCM (Firebase Cloud Messaging) push token is stored against your account so we can send the following push types — each of which you can disable individually in Profile → Notifications:</p>
+<ul>
+  <li>Streak reminders (daily, 20:00 local)</li>
+  <li>Day-1 welcome-back push (next morning after onboarding)</li>
+  <li>Weekly Sunday recap</li>
+  <li>Achievement-proximity nudges</li>
+  <li>Friend activity ("X just checked in to Y") — backend-triggered, 6h per-sender cooldown</li>
+  <li>Throwback / "on this day" memories</li>
+  <li>Trial-end reminder (24 hours before your free trial bills)</li>
+</ul>
+
+<h3>2.6 Analytics & diagnostics</h3>
+<p>We use Google Analytics for Firebase (GA4) to understand how the app is used, so we can fix bugs and improve features. Events are tied to a Firebase anonymous installation ID, not to your personal name. Examples of events: app open, screen view, paywall shown, purchase started/completed, streak rescued, memory shared.</p>
+<p>We do <strong>not</strong> use the iOS Advertising Identifier (IDFA) and we do not show third-party ads.</p>
+
+<h3>2.7 Device data</h3>
+<p>Standard technical information: device model, iOS version, app version, language, time zone, and (only if you grant location permission and tap "Check in here") your current approximate location.</p>
+
+<h2 id="how">3. How we use it</h2>
+<ul>
+  <li>To render your map, passport, statistics, and Travel DNA</li>
+  <li>To compute the global, regional, and friends leaderboards</li>
+  <li>To deliver the social features you opt into (friend requests, friend activity push, compare)</li>
+  <li>To process purchases and grant/revoke premium features</li>
+  <li>To send the local and push notifications listed in §2.5, only of the types you have left enabled</li>
+  <li>To debug crashes and improve product decisions through aggregated analytics</li>
+</ul>
+<p>We do <strong>not</strong> sell your data. We do not use your data to train AI models. We do not run targeted advertising.</p>
+
+<h2 id="sharing">4. Third parties</h2>
+<p>The Service is built on the following processors, who handle limited categories of data on our behalf under their own privacy commitments:</p>
+<ul>
+  <li><strong>Google Firebase</strong> (Authentication, Firestore, Cloud Functions, Cloud Messaging, Analytics) — account, check-in, friend, and analytics data. See <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
+  <li><strong>Apple</strong> (App Store, StoreKit, Push Notification Service, Sign in with Apple) — purchase verification and push delivery. See <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
+  <li><strong>Google Sign-In</strong> — if you choose Google as your sign-in method.</li>
+</ul>
+<p>We may disclose data when required to comply with a valid legal request, to protect the rights and safety of users, or in connection with a corporate transaction (merger, acquisition, transfer of assets) — in which case we will give notice through the Service before any change of control of your data.</p>
+
+<h2 id="legal">5. Legal bases (EU/UK users — GDPR/UK GDPR)</h2>
+<ul>
+  <li><strong>Contract</strong>: to provide the Service you requested (rendering your map, syncing your travels, processing purchases)</li>
+  <li><strong>Legitimate interest</strong>: to improve and secure the Service via diagnostic analytics</li>
+  <li><strong>Consent</strong>: for push notifications, location access, and access to your photo library — each requested at the OS level and revocable at any time in iOS Settings</li>
+</ul>
+
+<h2 id="retention">6. Retention</h2>
+<ul>
+  <li>Account, profile, and travel content: kept while your account is active. Deleted on request (see §7) or 24 months after the account becomes inactive.</li>
+  <li>Purchase verification records: kept for the duration of the subscription / lifetime entitlement plus 7 years for tax and accounting purposes.</li>
+  <li>Push tokens: kept while you have notifications enabled. Removed when iOS reports the token as invalidated.</li>
+  <li>Analytics events: retained for up to 14 months as per the default GA4 retention setting.</li>
+</ul>
+
+<h2 id="rights">7. Your rights</h2>
+<p>Regardless of where you live, you can:</p>
+<ul>
+  <li><strong>Access</strong> a copy of the data we hold about you</li>
+  <li><strong>Correct</strong> inaccurate data (display name, username, home country via the in-app Profile editor)</li>
+  <li><strong>Delete</strong> your account and all associated data</li>
+  <li><strong>Withdraw consent</strong> for any optional processing (notifications, location, photos) at any time in iOS Settings</li>
+  <li><strong>Object</strong> to processing based on legitimate interest (analytics) by uninstalling the app</li>
+  <li><strong>Lodge a complaint</strong> with your local data protection authority (EU/UK residents)</li>
+</ul>
+<p>To exercise any of these rights, contact us at the address in §11. We aim to respond within 30 days.</p>
+
+<h3>7.1 Deleting your account</h3>
+<p>From within the app, go to Profile → Settings → Delete Account. This will:</p>
+<ul>
+  <li>Remove your profile, check-ins, achievements, and friend list from our servers</li>
+  <li>Cancel any pending push tokens</li>
+  <li>Anonymize remaining records that we must retain for legal reasons (e.g. purchase receipts)</li>
+</ul>
+<p>Note: deleting the app from your device does <em>not</em> delete your server-side account. Use the in-app delete to do that.</p>
+
+<h2 id="security">8. Security</h2>
+<p>Data in transit is protected by TLS. Data at rest is stored on Google Firebase infrastructure subject to Google's security controls. Access by us to user records is limited to debugging and abuse-prevention purposes and is logged. We do not store passwords (authentication is delegated to Apple or Google).</p>
+<p>No system is impenetrable — please use a strong unique password on your Apple/Google account, since that is what gates access to your Travelog account.</p>
+
+<h2 id="children">9. Children</h2>
+<p>Travelog is not directed at children under 13. The App Store age rating is 4+ but the social and content-sharing features require a real Apple ID, which Apple already gates for users under 13 via Family Sharing. If you believe a child under 13 has provided us personal data without parental consent, contact us and we will delete it.</p>
+
+<h2 id="changes">10. Changes</h2>
+<p>We may update this policy from time to time. When we do, we will revise the "Effective date" at the top. Material changes will be surfaced in-app on next launch. Continued use of the Service after a change constitutes acceptance of the new policy.</p>
+
+<h2 id="contact">11. Contact</h2>
+<p>For privacy questions, deletion requests, or any of the rights listed in §7:</p>
+<ul>
+  <li>Email: <a href="mailto:brna.ozer@gmail.com">brna.ozer@gmail.com</a></li>
+</ul>
+
+<p class="footer">© 2026 Berna Ozer. Travelog is operated under the laws of the State of Delaware, USA.</p>
+
+</body>
+</html>
